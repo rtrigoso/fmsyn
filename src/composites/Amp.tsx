@@ -1,3 +1,5 @@
+import Knob from "./Knob";
+
 export default function Amp() {
   return (
     <div>
@@ -5,10 +7,10 @@ export default function Amp() {
       <div class="grid">
         <div class="graph main"></div>
         <div class="container">
-          <div class="attack knob"></div>
-          <div class="decay knob"></div>
-          <div class="sustain knob"></div>
-          <div class="release knob"></div>
+          <div class="attack"><Knob name="attack" /></div>
+          <div class="decay"><Knob name="decay" /></div>
+          <div class="sustain"><Knob name="sustain" /></div>
+          <div class="release"><Knob name="release" /></div>
         </div>
       </div>
     </div>
